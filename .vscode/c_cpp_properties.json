@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/inc/",
+                "${workspaceFolder}/inc/hiredis/",
+                "${workspaceFolder}/inc/lib60870/",
+                "${workspaceFolder}/inc/log4cplus/",
+                "${workspaceFolder}/inc/rapidjson/",
+                "${workspaceFolder}/inc/sqlite3/",
+                "${workspaceFolder}/inc/tinyxml2/",
+                "${workspaceFolder}/inc/uuid/",
+                "${workspaceFolder}/inc/usr/"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

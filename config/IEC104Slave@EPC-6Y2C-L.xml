@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <version>1.0</version>
+    <debug_enabled>false</debug_enabled>
+    <log4cplus>
+        <filepath>/home/xie/</filepath>
+    </log4cplus>
+
+    <redis>
+        <host>127.0.0.1</host>
+        <port>6379</port>
+        <password>123456</password>
+        <timeout>
+            <sec>0</sec>
+            <usec>1000</usec>
+        </timeout>
+
+        <up_channel>iec104_up_channel</up_channel>
+        <down_channel>iec104_down_channel</down_channel>
+    </redis>
+
+    <iec104>
+        <port>2404</port>
+        <ca>1</ca>         <!-- 公共地址 -->
+    </iec104>
+
+    <sqlite3>
+        <filepath>/home/</filepath>
+        <iec104slave_point_tb>iec104_point_tb</iec104slave_point_tb>
+        <iec104master_tb>iec104master_tb</iec104master_tb>
+    </sqlite3>
+</root>
