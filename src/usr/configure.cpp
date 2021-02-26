@@ -5,7 +5,7 @@
  *      Author: mr
  */
 
-#include "configure.h"
+#include "configure.hpp"
 
 #include "tinyxml2/tinyxml2.h"
 

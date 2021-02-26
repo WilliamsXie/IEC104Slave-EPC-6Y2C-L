@@ -17,7 +17,7 @@ CPP_DEPS += \
 src/tinyxml2/%.o: ../src/tinyxml2/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -I"/home/mr/workspace/IEC104Slave@EPC-6Y2C-L/inc" -I"/home/mr/workspace/IEC104Slave@EPC-6Y2C-L/inc/hiredis" -I"/home/mr/workspace/IEC104Slave@EPC-6Y2C-L/inc/lib60870" -I"/home/mr/workspace/IEC104Slave@EPC-6Y2C-L/inc/log4cplus" -I"/home/mr/workspace/IEC104Slave@EPC-6Y2C-L/inc/rapidjson" -I"/home/mr/workspace/IEC104Slave@EPC-6Y2C-L/inc/sqlite3" -I"/home/mr/workspace/IEC104Slave@EPC-6Y2C-L/inc/tinyxml2" -I"/home/mr/workspace/IEC104Slave@EPC-6Y2C-L/inc/uuid" -I"/home/mr/workspace/IEC104Slave@EPC-6Y2C-L/inc/usr" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	g++ -I"/home/xie/workspace/IEC104Slave-EPC-6Y2C-L/inc" -I"/home/xie/workspace/IEC104Slave-EPC-6Y2C-L/inc/hiredis" -I"/home/xie/workspace/IEC104Slave-EPC-6Y2C-L/inc/lib60870" -I"/home/xie/workspace/IEC104Slave-EPC-6Y2C-L/inc/log4cplus" -I"/home/xie/workspace/IEC104Slave-EPC-6Y2C-L/inc/rapidjson" -I"/home/xie/workspace/IEC104Slave-EPC-6Y2C-L/inc/sqlite3" -I"/home/xie/workspace/IEC104Slave-EPC-6Y2C-L/inc/tinyxml2" -I"/home/xie/workspace/IEC104Slave-EPC-6Y2C-L/inc/usr" -I"/home/xie/workspace/IEC104Slave-EPC-6Y2C-L/inc/uuid" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

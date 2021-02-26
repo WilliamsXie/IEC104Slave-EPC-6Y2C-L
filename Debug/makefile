@@ -39,19 +39,19 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: IEC104Slave@EPC-6Y2C-L
+all: IEC104Slave-EPC-6Y2C-L
 
 # Tool invocations
-IEC104Slave@EPC-6Y2C-L: $(OBJS) $(USER_OBJS)
+IEC104Slave-EPC-6Y2C-L: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L"/home/mr/workspace/IEC104Slave@EPC-6Y2C-L/lib/linux/hiredis" -L"/home/mr/workspace/IEC104Slave@EPC-6Y2C-L/lib/linux/lib60870" -L"/home/mr/workspace/IEC104Slave@EPC-6Y2C-L/lib/linux/log4cplus" -L"/home/mr/workspace/IEC104Slave@EPC-6Y2C-L/lib/linux/sqlite3" -L"/home/mr/workspace/IEC104Slave@EPC-6Y2C-L/lib/linux/uuid" -o "IEC104Slave@EPC-6Y2C-L" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"/home/xie/workspace/IEC104Slave-EPC-6Y2C-L/lib/linux/hiredis" -L"/home/xie/workspace/IEC104Slave-EPC-6Y2C-L/lib/linux/lib60870" -L"/home/xie/workspace/IEC104Slave-EPC-6Y2C-L/lib/linux/log4cplus" -L"/home/xie/workspace/IEC104Slave-EPC-6Y2C-L/lib/linux/sqlite3" -L"/home/xie/workspace/IEC104Slave-EPC-6Y2C-L/lib/linux/uuid" -Lcrypto -o "IEC104Slave-EPC-6Y2C-L" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(C_UPPER_DEPS)$(CXX_DEPS)$(OBJS)$(CPP_DEPS)$(C_DEPS) IEC104Slave@EPC-6Y2C-L
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(C_UPPER_DEPS)$(CXX_DEPS)$(OBJS)$(CPP_DEPS)$(C_DEPS) IEC104Slave-EPC-6Y2C-L
 	-@echo ' '
 
 .PHONY: all clean dependents
